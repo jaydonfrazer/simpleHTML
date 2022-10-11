@@ -5,23 +5,85 @@
 <head>
 
     <meta charset="UTF-8" />
-    <title>This is the Title</title>
+    <title>Main Page, smile!</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <style>
+        .image-round
+        {
+            width:200px;
+            height:200px;
+            object-fit: cover;
+
+            border-style:dotted;
+            border-radius: 5cm;
+            border-color:red;
+            background-color: blue;
+        }
+
+        .image-square
+        {
+            width:200px;
+            height:200px;
+            object-fit: cover;
+
+            border-style:dotted;
+            border-color:blue;
+            background-color: red; 
+        }
+
+        h1, h2
+        {
+            width: 600px;
+            font-family:fantasy;
+            text-align:center;
+            display:inline;
+            color:red;
+        }
+
+        .paragraph-image
+        {
+            width: 200px;
+            font-size: 14px;
+            font-family: fantasy;
+            text-align:center;
+            color: brown;
+        }
+
+        #gallery-container
+        {
+            display: inline-block;
+            font-size: 0;
+            left: 50%;
+            margin-left: -100px;
+            position: absolute;
+        }
+
+        .image-container
+        {
+            display:inline-block;
+            vertical-align: top;
+        }
+    
+
+    </style>
 
 </head>
 
-<body>
-    <h1>This is my title</h1>
-    <p>A lttle bit of text</p>
-    <div>
-        <div>
-            <img src="images/smile_face1.png" />
+<body style="background-color: yellow;">
+    <h1>Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!Smiley!!!</h1>
+    <p class="paragraph-image">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+    <div id="gallery-container">
+        <div class="image-container">
+            <img class="image-round" src="images/smile_face1.png" />
+            <p class="paragraph-image">A smiley face gritting his almost life-like teeth.</p>
         </div>
-        <div>
-            <img src="images/smile_face2.png" alt="The second smiley face." />
+        <div class="image-container">
+            <img class="image-square" src="images/smile_face2.png" alt="The second smiley face." />
+            <p class="paragraph-image">An off-center smiley, but he has the spirit!</p>
         </div>
-        <div>
-            <img src="images/smile_face3.png" alt="The third smiley face." />
+        <div class="image-container">
+            <img class="image-round" src="images/smile_face3.png" alt="The third smiley face." />
+            <p class="paragraph-image">"Uhhmm ackshully im an emoji!!!"</p>
         </div>
     </div>
 </body>
